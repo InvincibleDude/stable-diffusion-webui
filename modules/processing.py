@@ -630,6 +630,7 @@ def process_images_inner(p: StableDiffusionProcessing) -> Processed:
                     extra_network_data.update(hr_extra_network_data)
 
 
+
             if not p.disable_extra_networks:
                 with devices.autocast():
                     extra_networks.activate(p, extra_network_data)
